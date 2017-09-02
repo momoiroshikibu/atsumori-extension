@@ -1,4 +1,4 @@
-# 熱盛、出てしまうってよ
+# 熱盛、出てしまうん？
 
 Goole Chrome Extension
 

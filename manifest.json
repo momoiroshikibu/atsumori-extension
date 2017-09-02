@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "熱盛、出てしまうってよ",
-    "short_name": "熱盛、出てしまうってよ",
+    "name": "熱盛、出てしまうん？",
+    "short_name": "熱盛、出てしまうん？",
     "description": "Webサイトの内容次第で、熱盛が出てしまいます。",
     "author": "momoiroshikibu",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "permissions": [
         "tabs",
         "webNavigation",
