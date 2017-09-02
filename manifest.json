@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "Atsumori",
-    "short_name": "Atsumori",
-    "description": "make you hot",
+    "name": "熱盛、出てしまうってよ",
+    "short_name": "熱盛、出てしまうってよ",
+    "description": "Webサイトの内容次第で、熱盛が出てしまいます。",
     "author": "momoiroshikibu",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "background": {
         "scripts": ["main.js"]
     },
@@ -25,5 +25,14 @@
         "16": "icons/atsumori-16.png",
         "48": "icons/atsumori-48.png",
         "128": "icons/atsumori-128.png"
-    }
+    },
+    "content_scripts": [
+        {
+            "css": ["styles/atsumori.css"],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        }
+    ]
 }

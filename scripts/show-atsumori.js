@@ -1,4 +1,11 @@
-const hotWords = ['熱', '勝', '台風', 'サンシャイン池崎', '修造', 'アントニオ猪木']
+const hotWords = [
+    '熱',
+    '勝',
+    '台風',
+    'サンシャイン池崎',
+    '修造',
+    'アントニオ猪木'
+];
 
 const body = document.getElementsByTagName('body')[0];
 const documentText = body.innerText;
@@ -16,19 +23,17 @@ if (isHot) {
 }
 
 function showAtsumori() {
+
+    const div = document.createElement('div');
+    div.className = 'atsumori';
     const image = document.createElement('img');
     image.src = chrome.extension.getURL('images/atsumori.png');
-    image.className = 'atsumori';
-    image.style = `
-  position: fixed;
-  right: 50px;
-  bottom: 0px;
-  z-index: 100000;
-  cursor: pointer;
-`;
-    body.appendChild(image);
-    image.onclick = (e) => {
-        e.target.remove();
+
+    div.appendChild(image);
+    body.appendChild(div);
+
+    div.onclick = (e) => {
+        div.remove();
         (new Audio(chrome.extension.getURL('sound/shitsurei.mp3'))).play();
     }
 }
