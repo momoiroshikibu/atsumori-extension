@@ -4,7 +4,7 @@
     "short_name": "Atsumori",
     "description": "make you hot",
     "author": "momoiroshikibu",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "background": {
         "scripts": ["main.js"]
     },
@@ -16,7 +16,10 @@
         "*://*/*"
     ],
     "web_accessible_resources": [
-        "images/atsumori.png"
+        "images/atsumori.png",
+        "sound/atsumori.mp3",
+        "sound/aaatsumori.mp3",
+        "sound/shitsurei.mp3"
     ],
     "icons": {
         "16": "icons/atsumori-16.png",
