@@ -4,9 +4,8 @@
     "short_name": "熱盛、出てしまうん？",
     "description": "Webサイトの内容次第で、熱盛が出てしまいます。",
     "author": "momoiroshikibu",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "permissions": [
-        "tabs",
         "webNavigation",
         "http://*/*",
         "https://*/*",
